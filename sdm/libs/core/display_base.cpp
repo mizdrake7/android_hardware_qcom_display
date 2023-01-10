@@ -542,11 +542,11 @@ DisplayError DisplayBase::SetDisplayState(DisplayState state, bool teardown,
   DisplayError error = kErrorNone;
   bool active = false;
 
-  DLOGI("Set state = %d, display %d-%d, teardown = %d", state, display_id_,
-        display_type_, teardown);
+//  DLOGI("Set state = %d, display %d-%d, teardown = %d", state, display_id_,
+  //      display_type_, teardown);
 
   if (state == state_) {
-    DLOGI("Same state transition is requested.");
+    //DLOGI("Same state transition is requested.");
     return kErrorNone;
   }
 
