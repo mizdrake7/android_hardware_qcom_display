@@ -5,6 +5,8 @@ cc_defaults {
         "-Wconversion",
         "-Wall",
         "-Werror",
+	"-O3",
+	"-g0",
     ],
     shared_libs: [
         "liblog",
