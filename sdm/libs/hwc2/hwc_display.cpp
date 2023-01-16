@@ -87,7 +87,7 @@ uint32_t HWCColorMode::GetColorModeCount() {
 
 uint32_t HWCColorMode::GetRenderIntentCount(ColorMode mode) {
   uint32_t count = UINT32(color_mode_map_[mode].size());
-  DLOGI("mode: %d supported rendering intent count = %d", mode, count);
+//  DLOGI("mode: %d supported rendering intent count = %d", mode, count);
   return std::max(1U, count);
 }
 
@@ -2661,7 +2661,7 @@ HWC2::Error HWCDisplay::SubmitDisplayConfig(hwc2_config_t config) {
   }
 
   validated_ = false;
-  DLOGI("Active configuration changed to: %d", config);
+  //DLOGI("Active configuration changed to: %d", config);
 
   return HWC2::Error::None;
 }
