@@ -354,16 +354,6 @@ DisplayError HWDevice::Validate(HWLayers *hw_layers) {
 
     index++;
 
-    DLOGD_IF(kTagDriverConfig, "************************ DestScalar[%d] **************************",
-             dest_scalar_data->dest_scaler_ndx);
-    DLOGD_IF(kTagDriverConfig, "Mixer WxH %dx%d flags %x", dest_scalar_data->lm_width,
-             dest_scalar_data->lm_height, dest_scalar_data->flags);
-#ifdef MDP_DESTSCALER_ROI_ENABLE
-    DLOGD_IF(kTagDriverConfig, "Panel ROI [%d, %d, %d, %d]", dest_scalar_data->panel_roi.x,
-             dest_scalar_data->panel_roi.y, dest_scalar_data->panel_roi.w,
-             dest_scalar_data->panel_roi.h);
-#endif
-    DLOGD_IF(kTagDriverConfig, "*****************************************************************");
   }
   mdp_commit.dest_scaler_cnt = UINT32(hw_layer_info.dest_scale_info_map.size());
 
